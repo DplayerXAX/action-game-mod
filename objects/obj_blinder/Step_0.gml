@@ -10,24 +10,24 @@ var keepCamera_y=obj_cameraNow.y;
 */
 if(keyboard_check(vk_up)){
 
-y-=3;
-//obj_cameraNow.y-=3;
+y-=howIMove;
+//obj_cameraNow.y-=howIMove;
 
 }
  if(keyboard_check(vk_down)){
-y+=3;
-//obj_cameraNow.y+=3;
+y+=howIMove;
+//obj_cameraNow.y+=howIMove;
 
 }
 if(keyboard_check(vk_left)){
-x-=3;
-//obj_cameraNow.x-=3;
+x-=howIMove;
+//obj_cameraNow.x-=howIMove;
 image_xscale=-1;
 
 }
 if(keyboard_check(vk_right)){
-x+=3;
-//obj_cameraNow.x+=3;
+x+=howIMove;
+//obj_cameraNow.x+=howIMove;
 image_xscale=1;
 }
 
@@ -52,7 +52,7 @@ if(timer_shooting>0){timer_shooting--;}
 		bullet.image_xscale=1.5;
 		bullet.image_yscale=1.5;
 	
-		audio_play_sound(player_shoot,0,false);
+		audio_play_sound(shoot_sound,0,false);
 		var shell=instance_create_layer(x,y,"Instances",obj_shell);
 		timer_shooting=room_speed*1;
 		effectDone=false;

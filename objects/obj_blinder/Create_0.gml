@@ -6,9 +6,13 @@ HP=3;
 timer_charging=room_speed*0.5;
 charging=75;
 globalvar isMove;
+globalvar howIMove;
 globalvar effectExist;
+
 effectExist	=false;
 isMove=false;
+howIMove=3;
+
 isShooting=false;
 timer_shooting=room_speed*0.5;
 isAlive=true;

@@ -8,6 +8,7 @@ HP--;
 
 }
 howWeMove*=5;
+howIMove*=5;
 instance_destroy();
 instance_destroy(light);
 

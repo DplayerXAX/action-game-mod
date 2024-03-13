@@ -10,6 +10,7 @@ light.y=y;
 if(x>1366||x<0||y>768||y<0)
 {
 	howWeMove*=5;
+	howIMove*=5;
 instance_destroy();
 instance_destroy(light);
 

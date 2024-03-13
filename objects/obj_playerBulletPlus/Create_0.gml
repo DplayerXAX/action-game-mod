@@ -16,3 +16,4 @@ light=instance_create_layer(x,y,"light",obj_bulletLight);
 light.image_angle=direction;
 
 howWeMove*=0.2;
+howIMove*=0.2;

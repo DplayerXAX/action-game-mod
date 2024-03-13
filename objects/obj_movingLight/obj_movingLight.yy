@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "物体",
-    "path": "folders/物体.yy",
+    "name": "used object",
+    "path": "folders/物体/used object.yy",
   },
   "parentObjectId": {
     "name": "obj_light",

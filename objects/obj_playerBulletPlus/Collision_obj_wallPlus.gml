@@ -4,6 +4,7 @@
 
 light.isVanishing=true;
 howWeMove*=5;
+howIMove*=5;
 instance_destroy();
 
 
