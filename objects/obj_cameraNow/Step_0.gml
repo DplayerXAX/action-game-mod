@@ -20,6 +20,23 @@ if(shakeScreen){
 
 }
 
+if(shakeHarder){
+	if(!decideRandom){
+	var num=irandom(30)+5;
+	}
+	camera_set_view_pos(view_camera[0],x+num,y+num);
+	timer_shakeHarder--;
+	if(timer_shakeHarder<0){
+	camera_set_view_pos(view_camera[0],x,y);
+	show_debug_message("shaking!");
+	timer_shakeHarder=room_speed*0.1;
+	shakeHarder=false;
+	decideRandom=false;
+	}
+
+}
+
+
 if(whoWin!=""){
 	timer_result++;
 	audio_stop_sound(dream_music);

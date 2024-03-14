@@ -20,4 +20,8 @@ if(!doneCreate){
 draw_circle_color(1150,700,20,c_white,c_white,false);
 draw_circle_color(1150,700,coolDown*6/room_speed,c_black,c_black,false);
 
-
+if(isAccer){
+draw_set_font(font_noticePlus);
+draw_set_color(c_white);
+draw_text(980,690,"DASHING!");
+}

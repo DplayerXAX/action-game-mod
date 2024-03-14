@@ -21,6 +21,7 @@
   ],
   "ResourceOrderSettings": [
     {"name":"spr_textBlock","order":28,"path":"sprites/spr_textBlock/spr_textBlock.yy",},
+    {"name":"font_noticePlus","order":2,"path":"fonts/font_noticePlus/font_noticePlus.yy",},
     {"name":"spr_playerBullet","order":6,"path":"sprites/spr_playerBullet/spr_playerBullet.yy",},
     {"name":"obj_gun","order":3,"path":"objects/obj_gun/obj_gun.yy",},
     {"name":"win_sound","order":13,"path":"sounds/win_sound/win_sound.yy",},

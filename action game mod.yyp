@@ -39,6 +39,7 @@
   },
   "resources": [
     {"id":{"name":"spr_textBlock","path":"sprites/spr_textBlock/spr_textBlock.yy",},},
+    {"id":{"name":"font_noticePlus","path":"fonts/font_noticePlus/font_noticePlus.yy",},},
     {"id":{"name":"spr_playerBullet","path":"sprites/spr_playerBullet/spr_playerBullet.yy",},},
     {"id":{"name":"obj_gun","path":"objects/obj_gun/obj_gun.yy",},},
     {"id":{"name":"win_sound","path":"sounds/win_sound/win_sound.yy",},},
