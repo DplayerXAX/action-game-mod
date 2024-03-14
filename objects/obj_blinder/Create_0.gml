@@ -8,9 +8,11 @@ charging=75;
 globalvar isMove;
 globalvar howIMove;
 globalvar effectExist;
+globalvar whoWin;
 
 effectExist	=false;
 isMove=false;
+whoWin="";
 howIMove=3;
 
 isShooting=false;
@@ -28,4 +30,4 @@ heart1=instance_create_layer(250,100,"UI",obj_heart);
 heart2=instance_create_layer(300,100,"UI",obj_heart);
 heart3=instance_create_layer(350,100,"UI",obj_heart);
 
-audio_play_sound(0,dream_music,true);
+audio_play_sound(dream_music,0,true);

@@ -19,6 +19,35 @@ if(shakeScreen){
 	}
 
 }
+
+if(whoWin!=""){
+	timer_result++;
+	audio_stop_sound(dream_music);
+	audio_stop_sound(stunned_sound);
+	finalSplash=instance_create_layer(x,y,"UIPlus",obj_splash);
+
+
+	
+	draw_text(300,300,"what");
+	if(!endPrint){
+	if(whoWin=="blinder1"){
+		layer_sequence_create("UIPlusPlus",500,280,blinder1Win);
+		audio_play_sound(win_sound,0,true);
+		endPrint=true;
+		}
+	else if(whoWin=="blinder2"){
+		layer_sequence_create("UIPlusPlus",500,280,blinder2Win);
+		endPrint=true;
+		}
+	
+	}
+	
+	if(timer_result>room_speed*1&&keyboard_check(ord("R"))){
+	room_goto(help);
+	audio_stop_sound(win_sound);
+	}
+	
+}
 /*
 if(blackBarExist){
 	layer_sequence_x(endingSequence,x);

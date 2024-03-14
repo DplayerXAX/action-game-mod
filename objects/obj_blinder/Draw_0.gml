@@ -3,4 +3,4 @@
 
 draw_self();
 
-draw_healthbar(250,600,350,650,charging,c_white,c_yellow,c_yellow,0,true,true);
+draw_healthbar(220,700,400,720,charging,c_white,c_yellow,c_yellow,0,true,true);

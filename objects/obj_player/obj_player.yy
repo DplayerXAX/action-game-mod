@@ -18,8 +18,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "物体",
-    "path": "folders/物体.yy",
+    "name": "unused object",
+    "path": "folders/物体/unused object.yy",
   },
   "parentObjectId": null,
   "persistent": false,

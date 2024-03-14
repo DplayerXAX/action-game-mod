@@ -7,14 +7,15 @@
 
 
 
-if(place_meeting(x,y,obj_light)){
-x=irandom(1360)+3;
-y=irandom(762)+3;
-while(!place_meeting(x,y,obj_light)){
+if(place_meeting(x,y,obj_light)&&charging>=20){
+	charging-=20;
+	audio_play_sound(exchange_sound,0,false);
 	x=irandom(1360)+3;
 	y=irandom(762)+3;
-}
-
+	while(!place_meeting(x,y,obj_light)){
+	x=irandom(1360)+3;
+	y=irandom(762)+3;
+	}
 }
 
 

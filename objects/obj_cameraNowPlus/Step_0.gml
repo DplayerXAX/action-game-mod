@@ -1,6 +1,6 @@
 /// @description 在此处插入描述 
 // 你可以在此编辑器中写入代码 
-
+/*
 x=obj_blinder2.x-194;
 y=obj_blinder2.y-126;
 
@@ -40,4 +40,4 @@ if(blackBarExist){
 	layer_sequence_x(endingSequence,x+0.2*);
 	layer_sequence_y(endingSequence,y+0.2*);
 	
-}
+}*/

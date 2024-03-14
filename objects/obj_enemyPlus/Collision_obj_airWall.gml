@@ -3,9 +3,6 @@
 
 
 speed*=-1;
-if(useGun){
-enemyGun.speed*=-1;
-}
 
 
 

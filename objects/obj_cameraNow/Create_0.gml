@@ -8,8 +8,9 @@ shakeScreen=false;
 decideRandom=false;
 timer_shakeScreen=room_speed*0.1;
 createDone=false;
+endPrint=false;
 timer_showText=room_speed*1.2;
-
+timer_result=0;
 
 
 

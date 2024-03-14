@@ -31,8 +31,8 @@ x+=howIMove;
 image_xscale=1;
 }
 
-if(isShooting&&isAlive&&charging){
-	if(charging>=20){
+if(isShooting&&isAlive){
+	if(charging>=10){
 	if(!effectDone){
 	
 	bulletEffect=instance_create_layer(x+4,y,"Effects",obj_effectPlus);
@@ -48,7 +48,7 @@ if(timer_shooting>0){timer_shooting--;}
 		else{
 		obj_cameraNow.shakeScreen=true;
 		var bullet=instance_create_layer(x,y,"Instances",obj_playerBulletPlus);
-		charging-=20;
+		charging-=10;
 		bullet.image_xscale=1.5;
 		bullet.image_yscale=1.5;
 	
@@ -90,4 +90,7 @@ if(timer_charging>room_speed*0.2){
 charging++;
 timer_charging=0;
 }
+}
+if(charging>100){
+charging=100;	
 }
