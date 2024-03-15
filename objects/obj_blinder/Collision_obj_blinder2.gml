@@ -1,7 +1,8 @@
 
-
+if(timer_invincible<0){
 HP--;
 audio_play_sound(scary_laugh,0,false);
+timer_invincible=room_speed*0.5;
 if(HP>=0){
 	obj_cameraNow.shakeHarder=true;
 	if(HP=2){
@@ -23,4 +24,5 @@ if(HP>=0){
 	}
 
 
+}
 }

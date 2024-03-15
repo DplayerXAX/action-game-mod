@@ -4,10 +4,12 @@
 
 draw_self();
 if(drawBlock){
+
 	timer_draw++;
 if(!doneCreate){
 	audio_play_sound(stunned_sound,0,false);
-	text=instance_create_layer(x,y-20,"Effects",obj_textBlock);
+
+	text=instance_create_layer(1050,700,"Effects",obj_textBlock);
 	doneCreate=true;
 }
 

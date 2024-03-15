@@ -4,10 +4,7 @@
 playerDirection = point_direction(obj_blinder.x ,obj_blinder.y , mouse_x , mouse_y );
 var _keep_x=x;
 var _keep_y=y;
-/*
-var keepCamera_x=obj_cameraNow.x;
-var keepCamera_y=obj_cameraNow.y;
-*/
+timer_invincible--;
 if(keyboard_check(vk_up)){
 
 y-=howIMove;
@@ -78,8 +75,13 @@ if(place_meeting(x,y,obj_wallPlus)){
 	if(!place_meeting(_keep_x,_keep_y,obj_wallPlus)){
 	x=_keep_x;
 	y=_keep_y;
-	//obj_cameraNow.x=keepCamera_x;
-	//obj_cameraNow.y=keepCamera_y;
+	}
+}
+if(place_meeting(x,y,obj_airWall)){
+	
+	if(!place_meeting(_keep_x,_keep_y,obj_wallPlus)){
+	x=_keep_x;
+	y=_keep_y;
 	}
 }
 

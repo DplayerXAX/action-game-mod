@@ -31,7 +31,7 @@
   "physicsShapePoints": [],
   "physicsStartAwake": true,
   "properties": [],
-  "solid": true,
+  "solid": false,
   "spriteId": {
     "name": "spr_blinder2",
     "path": "sprites/spr_blinder2/spr_blinder2.yy",
