@@ -5,7 +5,7 @@
 isShooting=false;
 timer_shooting=room_speed*1;
 effectDone=false;
-
-
+audio_stop_sound(charging_sound);
+instance_destroy(text1);
 
 

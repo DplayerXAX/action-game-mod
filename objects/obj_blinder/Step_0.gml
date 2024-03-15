@@ -31,7 +31,8 @@ image_xscale=1;
 if(isShooting&&isAlive){
 	if(charging>=10){
 	if(!effectDone){
-	
+	audio_play_sound(charging_sound,0,false);
+	text1=instance_create_layer(480,710,"UIPlusPlus",obj_textBlockMeToo);
 	bulletEffect=instance_create_layer(x+4,y,"Effects",obj_effectPlus);
 	effectExist=true;
 	effectDone=true;
@@ -43,6 +44,7 @@ if(isShooting&&isAlive){
 		}
 if(timer_shooting>0){timer_shooting--;}
 		else{
+		instance_destroy(text1);
 		obj_cameraNow.shakeScreen=true;
 		var bullet=instance_create_layer(x,y,"Instances",obj_playerBulletPlus);
 		charging-=10;

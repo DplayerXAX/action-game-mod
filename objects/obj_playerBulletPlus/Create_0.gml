@@ -14,6 +14,6 @@ image_angle = direction;
 timer_effect=room_speed*1;
 light=instance_create_layer(x,y,"light",obj_bulletLight);
 light.image_angle=direction;
-
+show_debug_message("hell yeah");
 howWeMove*=0.2;
 howIMove*=0.2;
